@@ -1,0 +1,19 @@
+messages:
+  prefix: '&8[&bWOW&8] &r'
+announcement-format: '&8[&6ANNOUNCEMENT&8] &f{message}'
+spawn-countdown-seconds: 3
+default-rank: PLAYER
+ranks:
+  PLAYER:
+    prefix: '&7[PLAYER]'
+    suffix: ''
+    weight: 0
+    permissions: []
+players: {}
+scoreboard:
+  enabled: true
+  title: '&b&lWOW SMP'
+  lines:
+    - '&7Player: &f%player%'
+    - '&7Rank: &f%rank%'
+    - '&7Online: &f%online%'

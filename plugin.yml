@@ -1,0 +1,29 @@
+name: WOWManager
+version: 1.0.0
+main: com.wowmanager.WOWManager
+api-version: '1.21'
+author: WOWManager Team
+description: Standalone SMP management, ranks, spawn, announcements and scoreboard.
+commands:
+  announcement:
+    description: Broadcast a server announcement.
+    usage: /announcement <message>
+    permission: wowmanager.admin
+  setspawn:
+    description: Set the server spawn.
+    permission: wowmanager.admin
+  spawn:
+    description: Teleport to server spawn.
+  rank:
+    description: Manage standalone ranks.
+    usage: /rank <create|delete|set|remove|list>
+    permission: wowmanager.admin
+  scoreboard:
+    description: Toggle your scoreboard or reload it.
+permissions:
+  wowmanager.admin:
+    description: Access WOWManager administration commands.
+    default: op
+  wowmanager.spawn.bypass:
+    description: Bypass spawn teleport countdown.
+    default: op
